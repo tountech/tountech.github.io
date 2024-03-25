@@ -3,16 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TounTech - Portfolio</title>
+
+    <title>Adetoun Adegoke | Portfolio</title>
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- Bootstrap CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <script src="script.js"></script>
+
 </head>
 <body>
 
 <!-- Navigation Bar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg">
   <a class="navbar-brand" href="#">TounTech</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -22,6 +27,9 @@
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
         <a class="nav-link" href="#about">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="images/Adetoun_Adegoke_Resume.pdf" target="_blank">Resume</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#projects">Projects</a>
@@ -34,14 +42,14 @@
 </nav>
 
 <!-- Introduction Section -->
-<section id="intro">
-    <div id="welcome-section">
+<section id="welcome-section">
+    <div id="welcome-section"> 
         <div class="container text-center">
             <h1><span class="name">ADETOUN O. ADEGOKE</span></h1> <!-- Added a span to make your name bold -->
             <h1>PORTFOLIO</h1>
             <p class="lead">Passionate about data and technology</p>
             <!-- Added buttons for About Me and Projects -->
-            <a href="#about" class="btn btn-primary btn-lg mr-3">About Me</a>
+            <a href="images/Adetoun_Adegoke_Resume.pdf" class="btn btn-secondary btn-lg"  target="_blank">Resume</a>
             <a href="#projects" class="btn btn-secondary btn-lg">Projects</a>
         </div>
     </div>
@@ -51,89 +59,148 @@
 <!-- About Me Section -->
 <section id="about" class="py-5 bg-light">
     <div class="container">
+      <h2 class="many-more text-center text-dark mb-4">About Me</h2>
         <div class="section">
-            <h2>Who Am I?</h2>
-            <p>
-                Adetoun is passionate about data and technology and firmly believes that data serves as a powerful tool in making the world a better place through informed decision-making. She recognizes that every day, individuals, businesses, and organizations are confronted with choices that hold the potential to significantly impact their lives. Understanding the pivotal role of data, she advocates for its importance in assisting individuals to make informed decisions, thereby providing them with a certain level of confidence in predicting outcomes.
-            </p>
+          <!-- Video Player Container -->
+<div class="video-container">
+    <!-- Video Player -->
+    <video id="myVideo" width="50%" controls onclick="expandVideo()">
+        <source src="images/Adetoun Adegoke.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+
+
+
+            
         </div>
-        <div class="section">
-            <h2>My Experience and Passion</h2>
-            <p>
-                Adetoun is a motivated Programmer Analyst with over four years of experience and a recent degree in Data Analytics. She has a strong background in application development and data analytics, with expertise in driving insights from data. She possesses strong analytical, problem-solving, and critical thinking skills. She is passionate about leveraging technology to solve real-world problems and is dedicated to continuous learning and professional growth. Currently, she's seeking a challenging role at an esteemed organization where she can apply her expertise to drive innovative solutions.
-            </p>
-        </div>
-        <div class="section">
-            <h2>Skills and Expertise</h2>
-            <ul>
-                <li>Competent in SQL, with expertise in MySQL and SQL Server for effective database design and management, and writing and optimizing complex queries for data analytics and scripting.</li>
-                <li>Skilled in Python for data analysis and machine learning.</li>
-                <li>Proficient in Microsoft Excel, utilizing formulas and pivot tables for data analysis and visualization.</li>
-                <li>Proficient in creating and analyzing dashboards using Power BI.</li>
-                <li>Knowledgeable in Hadoop (HDP) for efficient big data storage and manipulation.</li>
-            </ul>
-        </div>
+       
+       
     </div>
 </section>
-
 
 
 <!-- Projects Section -->
 <section id="projects" class="bg-dark py-5">
     <div class="container">
-        <h2>Projects</h2>
-        <div class="projects-grid">
-            <div class="project">
-                <h3>Machine Learning: Optimizing input for face recognition system- Published
-                </h3>
-                <img src="images/multi-camera2.jpg" alt="Project 1 Image">
-                <p>Description of Project 1</p>
-                <a href="#" class="btn btn-primary">View Project</a>
+        <h2 class="text-center text-light mb-4">Projects</h2>
+        <div class="row">
+            <!-- Project Card -->
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100 border-light">
+                    <div class="card-body">
+                        <h5 class="card-title font-weight-bold text-dark">Machine Learning: Optimizing input for face recognition system</h5>                        <img src="images/cctv.jpg" class="card-img-top" alt="Project 1 Image">
+                        <p class="card-text text-dark">Utilizing multi-camera setups to enhance face recognotion systems. Using Python and a Siamese Neural Network, I selected the most representative facial view. Key libraries include OpenCV, TensorFlow, and Keras</p>
+                        <a href="https://www.kaggle.com/code/hardeythoune/optimizing-input-for-face-recognition-system/edit" class="btn btn-sm btn-outline-light">View Project</a>
+                    </div>
+                </div>
             </div>
-            <div class="project">
-                <h3>Project 2</h3>
-                <img src="project2.jpg" alt="Project 2 Image">
-                <p>Description of Project 2</p>
-                <a href="#" class="btn btn-primary">View Project</a>
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100 border-light">
+                    <div class="card-body">
+                        <h5 class="card-title font-weight-bold text-dark">Predictive Modeling for Retail Marketing: Affinity Card Classification</h5>                        
+                        <img src="images/HD_image.jpg" class="card-img-top" alt="Project 1 Image">
+                        <p class="card-text text-dark">A predictive model was developed using a retailer company's marketing campaign data to predict the target variable: Affinity card (Low or High Value card). This project, implemented in Python, employed logistic regression and random forest classifier algorithms</p>
+                        <a href="https://colab.research.google.com/drive/1sq5IwPYy7HwnJzO3PICMLknVZ4OZjFyh?usp=sharing" class="btn btn-sm btn-outline-light">View Project</a>
+                    </div>
+                    
+                </div>
             </div>
-            <div class="project">
-                <h3>Project 3</h3>
-                <img src="project3.jpg" alt="Project 3 Image">
-                <p>Description of Project 3</p>
-                <a href="#" class="btn btn-primary">View Project</a>
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100 border-light">
+                    <div class="card-body">
+                        <h5 class="card-title font-weight-bold text-dark">Heart Disease Risk Factors: Exploratory Data Analysis</h5>                        
+                        <img src="images/heart.jpg" class="card-img-top" alt="Project 1 Image">
+                        <p class="card-text text-dark">Exploratory data analysis to identify modifiable risk factors associated with heart disease, focusing on lifestyle and disease categories. The findings aim to guide and educate the public for better decision-making</p>
+                        <a href="https://colab.research.google.com/drive/172iGh7AMnsEvbVZ8lSPaDfcG3hp5AMN_?usp=sharing" class="btn btn-sm btn-outline-light">View Project</a>
+                    </div>
+                   
+                </div>
             </div>
-            <div class="project">
-                <h3>Project 1</h3>
-                <img src="project1.jpg" alt="Project 1 Image">
-                <p>Description of Project 1</p>
-                <a href="#" class="btn btn-primary">View Project</a>
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100 border-light">
+                    <div class="card-body">
+                        <h5 class="card-title font-weight-bold text-dark">PowerBI Dashboards</h5>                        
+                        <img src="images/BI.png" class="card-img-top" alt="Project 1 Image">
+                        <p class="card-text text-dark">PowerBI Dashboards for projects</p>
+                        <a href="https://www.novypro.com/profile_projects/adetounadegoke" class="btn btn-sm btn-outline-light" target="_blank">View Project</a>
+                    </div>
+                    
+                </div>
             </div>
-            <div class="project">
-                <h3>Project 1</h3>
-                <img src="project1.jpg" alt="Project 1 Image">
-                <p>Description of Project 1</p>
-                <a href="#" class="btn btn-primary">View Project</a>
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100 border-light">
+                    <div class="card-body">
+                        <h5 class="card-title font-weight-bold text-dark"> Investigating the Use of Force by Police in London </h5>                      
+                        <img src="images/police.jpg" class="card-img-top" alt="Project 1 Image">
+                        <p class="card-text text-dark">In this project, I explored the factors influencing my initial deployment of Conducted Electrical Devices (CEDs) as the first tactic by the London Police. Utilized both unsupervised and supervised machine learning techniques, I uncovered patterns and predict CED usage, offering insights for communities to mitigate CED usage, promoting informed and accountable policing practices</p>
+                        <a href="https://colab.research.google.com/drive/12mMFkmcqv1Ze6HQrdPdAat6IWHH1mtJp?usp=sharing" class="btn btn-sm btn-outline-light">View Project</a>
+                    </div>
+                    
+                </div>
             </div>
-            <div class="project">
-                <h3>Project 1</h3>
-                <img src="project1.jpg" alt="Project 1 Image">
-                <p>Description of Project 1</p>
-                <a href="#" class="btn btn-primary">View Project</a>
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100 border-light">
+                    <div class="card-body">
+                        <h5 class="card-title font-weight-bold text-dark"> Data Warehouse Schema and Design </h5>                      
+                        <img src="images/sch.png" class="card-img-top" alt="Project 1 Image">
+                        <p class="card-text text-dark">In a comprehensive coursework, I delved into Data Warehousing and Big Data fundamentals. I mastered skills such as defining business requirements, identifying grain levels, and designing dimensions and fact tables. With SSMS, I managed databases and loaded data into Hive using Apache HDFS. Moreover, I became adept in tools like Data Analytics Studio and Pig for data manipulation.</p>
+                        <a href="images/Data Warehousing and Big Data.pdf" target="_blank"class="btn btn-sm btn-outline-light">View Project</a>
+                    </div>
+                    
+                </div>
             </div>
+            
             <!-- Repeat for additional projects -->
         </div>
+
+
+            <p class="many-more">And many more</p>
+        
     </div>
 </section>
 
 
 
 <!-- Contact Section -->
-<section id="contact" class="py-5">
+<section id="contact" class="py-5 bg-light">
     <div class="container">
-        <h2>Contact Me</h2>
-        <p>This is where people can reach out to you.</p>
+        <h2 class="text-center mb-4">Get In Touch</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-7">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="contact-group">
+                            <h4 class="group-title">Location</h4>
+                            <p>Ottawa, ON. Canada</p>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="contact-group email-group">
+                            <h4 class="group-title">Email</h4>
+                            <p><a href="mailto:adediranadetouno@yahoo.com">adediranadetouno@yahoo.com</a></p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="contact-group social-group">
+                            <h4 class="group-title">Social</h4>
+                            <ul class="list-inline social-icons">
+                                <li class="list-inline-item"><a href="https://www.linkedin.com/in/adetoun-adegoke" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a></li>
+                                <li class="list-inline-item"><a href="https://github.com/tountech" target="_blank"><i class="fab fa-github fa-lg"></i></a></li>
+                                <li class="list-inline-item"><a href="https://www.kaggle.com/hardeythoune" target="_blank"><i class="fab fa-kaggle fa-lg"></i></a></li>
+                                <li class="list-inline-item"><a href="mailto:adediranadetouno@yahoo.com"><i class="fas fa-envelope fa-lg"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
+
+
+
+
 
 <!-- Bootstrap JavaScript and jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

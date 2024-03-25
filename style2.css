@@ -1,0 +1,221 @@
+/* Default styles */
+
+/* Styles for screens larger than 768px (tablets and desktops) */
+@media (min-width: 768px) {
+    /* Responsive styles for tablets and desktops */
+}
+
+/* Styles for screens larger than 992px (desktops) */
+@media (min-width: 992px) {
+    /* Additional responsive styles for larger desktops */
+}
+
+/* Styles for screens larger than 1200px (large desktops) */
+@media (min-width: 1200px) {
+    /* Additional responsive styles for large desktops */
+}
+
+/* Custom CSS */
+.navbar {
+    background-color: #000000 ; /*#040720 Dark blue background color */
+    
+}
+
+.nav-link  {
+    color: #98d4df; /* gold: fba36b.*/
+}
+
+.navbar-brand {
+    color: #98d4df; 
+}
+
+.nav-link:hover {
+    color: #fff; 
+}
+
+.navbar-brand:hover{
+    color: #fff; /* White color */
+}
+
+#welcome-section {
+    background-image: url('images/HD_MAIN.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+#welcome-section h1 {
+    font-size: 3em; /* Increased font size for your name and PORTFOLIO */
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#welcome-section a.btn {
+    background-color: #000000; /* Black background */
+    color: #98d4df;
+}
+
+#welcome-section p {
+    font-size: 1.5em;
+}
+
+/* Make your name bold */
+.name {
+    font-weight: bold;
+}
+
+
+/* Custom CSS */
+.full-page {
+    height: 100vh; /* Make the section occupy the full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.full-page .container {
+    width: 100%;
+}
+
+
+/* Custom CSS for About Me Section */
+#about {
+    text-align: justify;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+.section h2 {
+    font-weight: bold;
+}
+
+.section p, .section ul {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Additional styling can be added as needed */
+
+
+
+/* CSS for Video Container */
+.video-container {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+}
+
+
+/* CSS for Project Cards */
+.card {
+    border: none; /* Remove border */
+}
+
+.card-body {
+    padding: 1.25rem; /* Add padding */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* Ensure card body fills entire height */
+}
+
+.card-title {
+    font-size: 1rem; /* Larger title font size */
+    font-weight: bold; /* Bold font weight */
+    height: 50px; /* Fixed height for title */
+    overflow: hidden; /* Hide overflow text */
+}
+
+.card-text {
+    font-size: 0.75rem; /* Description font size */
+}
+
+.card-footer {
+    font-size: 2rem; /* Adjust font size */
+    font-style: italic; /* Italicize the text */
+    margin: 0; /* Remove any margin */
+    padding: 0; /* Remove any padding */
+}
+
+
+
+/* Custom CSS for decorative rule */
+.many-more {
+    font-size: 2rem; /* Adjust font size */
+    font-style: italic; /* Italicize the text */
+    margin: 0; /* Remove any margin */
+    padding: 0; /* Remove any padding */
+    text-align: center; /* Center the text */
+    color: #fff; /* White text color */
+}
+
+.many-more:after {
+    content: '';
+    display: block;
+    width: 50px; /* Adjust the width of the rule */
+    height: 2px; /* Adjust the height and thickness of the rule */
+    background-color: #fff; /* Adjust the color of the rule */
+    margin: 10px auto; /* Adjust the margin to center the rule */
+}
+
+.card-body a.btn {
+    width: 150px; /* Adjust width as needed */
+    background-color: #343a40; /* Black background */
+    color: #fff; /* White text color for button */
+    border-radius: 5px; /* Curved edges */
+    display: inline-block; /* Make button inline */
+    text-align: center; /* Center text horizontally */
+    padding: 0.5rem 1rem; /* Add padding */
+    margin: 0 auto; /* Center button horizontally */
+}
+
+
+/* CSS for Contact Section */
+/* Custom CSS for Contact Section */
+#contact {
+    padding-top: 80px; /* Add top padding */
+    padding-bottom: 80px; /* Add bottom padding */
+}
+
+.email-group {
+    width: calc(100% + 10px); /* Adjust width to ensure email is fully displayed */
+}
+
+.social-group {
+    width: calc(100% - 10px); /* Adjust width to accommodate social icons */
+}
+
+.contact-group {
+    width: 100%;  /*Make the contact group div full width */
+    margin-bottom: 20px; /* Add spacing between contact groups */
+}
+
+.contact-group {
+    font-size: 1.2rem; /* Adjust font size */
+    padding-left: 0; /* Remove default padding */
+}
+
+.contact-group li {
+    margin-bottom: 20px; /* Add spacing between items */
+}
+
+.contact-group i {
+    margin-right: 20px; /* Add spacing between icon and text */
+}
+
+.contact-info a {
+    color: #007bff; /* Change link color */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.contact-info a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
